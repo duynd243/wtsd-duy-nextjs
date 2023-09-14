@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "npm run generate && concurrently \"faust dev\" \"npm run watch-codegen\"",
+    "dev": "yarn generate && concurrently \"faust dev\" \"yarn watch-codegen\"",
     "build": "faust build",
     "generate": "faust generatePossibleTypes",
     "start": "faust start",
