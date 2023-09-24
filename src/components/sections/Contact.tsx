@@ -19,7 +19,7 @@ export const contactSchema = z.object({
 
 export type ContactSchema = z.infer<typeof contactSchema>;
 
-const Contact = () => {
+const Contact = (props: any) => {
   const { globalData } = useRootContext();
 
   const {
