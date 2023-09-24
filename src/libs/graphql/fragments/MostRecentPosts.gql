@@ -1,0 +1,30 @@
+fragment MostRecentPostsFragment on RootQuery {
+  posts(
+    first: $numberOfPosts
+    where: { orderby: { field: DATE, order: DESC } }
+  ) {
+    nodes {
+      databaseId
+      title
+      date
+      slug
+      categories {
+        nodes {
+          name
+        }
+      }
+      featuredImage {
+        node {
+          sizes
+          altText
+          id
+          sourceUrl
+        }
+      }
+      editorBlocks(flat: false) {
+        ...PostEditorBlockFragment
+        ...CoreParagraphFragment
+      }
+    }
+  }
+}

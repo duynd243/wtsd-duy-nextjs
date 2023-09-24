@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .baseContainer {
+    @apply container mx-auto px-[30px] lg:px-[40px] xl:px-[70px];
+  }
+
+  .footerHeading {
+    @apply mb-[23px] text-[24px] font-semibold leading-[291.667%] text-black;
+  }
+  .footerItem {
+    @apply text-[18px] font-medium leading-[34px] text-dim-gray;
+  }
+
+  .blogHeroMetadata {
+    @apply flex items-center gap-x-[12px];
+
+    span {
+      @apply line-clamp-1 break-words text-breadcrumb-item text-white;
+    }
+  }
+
+  .blogSidebarCard {
+    @apply rounded-[10px] bg-white p-[24px] pb-[60px] shadow-blog-card;
+    .title {
+      @apply text-[36px] font-medium leading-[141.667%] text-black;
+    }
+  }
+
+  .blogContent,
+  .commentContent {
+    a {
+      @apply font-medium text-ultramarine-blue hover:underline;
+    }
+  }
+}

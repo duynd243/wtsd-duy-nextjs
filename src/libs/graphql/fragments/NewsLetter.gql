@@ -1,0 +1,17 @@
+fragment NewsLetterFrontPageFragment on Page_Pagebuilderfrontpage_DynamicBlocks_Subscribenewsletter {
+  heading
+  description
+  background {
+    altText
+    sourceUrl
+  }
+}
+
+fragment NewsLetterFragment on Page_Pagebuilder_DynamicBlocks_SubscribeNewsLetter {
+  heading
+  description
+  background {
+    altText
+    sourceUrl
+  }
+}

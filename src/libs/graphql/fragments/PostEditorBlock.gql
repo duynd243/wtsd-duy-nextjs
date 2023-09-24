@@ -1,0 +1,10 @@
+fragment PostEditorBlockFragment on PostEditorBlock {
+  __typename
+  apiVersion
+  renderedHtml
+  id: clientId
+  parentClientId
+  isDynamic
+  name
+  cssClassNames
+}

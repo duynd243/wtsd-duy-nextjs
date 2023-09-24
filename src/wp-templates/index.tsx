@@ -1,11 +1,12 @@
 import frontPage from "./front-page";
-import page from "./page";
-import single from "./single";
-import archive from "./archive";
+import pageBlogs from "./page-blogs";
+import singleBlog from "./single-blog";
+import singlePost from "./single-post";
+import pageContact from "./page-contact";
 
 export default {
   "front-page": frontPage,
-  page,
-  single,
-  archive,
+  "page-blogs": pageBlogs,
+  "single-post": singlePost,
+  "page-contact": pageContact,
 };

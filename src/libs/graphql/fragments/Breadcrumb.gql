@@ -1,0 +1,14 @@
+fragment BreadcrumbFragment on Page_Pagebuilder_DynamicBlocks_Breadcrumb {
+  title
+  links {
+    link {
+      title
+      target
+      url
+    }
+  }
+  backgroundImage {
+    sourceUrl
+    altText
+  }
+}

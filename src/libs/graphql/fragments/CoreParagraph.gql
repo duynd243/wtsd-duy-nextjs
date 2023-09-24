@@ -1,0 +1,6 @@
+fragment CoreParagraphFragment on CoreParagraph {
+  attributes {
+    content
+    align
+  }
+}

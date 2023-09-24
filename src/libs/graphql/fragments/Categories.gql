@@ -1,0 +1,8 @@
+fragment CategoriesFragment on RootQuery {
+  categories {
+    nodes {
+      id
+      name
+    }
+  }
+}

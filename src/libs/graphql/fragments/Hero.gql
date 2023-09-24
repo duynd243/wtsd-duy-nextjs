@@ -1,0 +1,8 @@
+fragment HeroFrontPageFragment on Page_Pagebuilderfrontpage_DynamicBlocks_Hero {
+  title
+  description
+  image {
+    altText
+    sourceUrl
+  }
+}

@@ -1,0 +1,13 @@
+fragment FeaturedItemsFragment on Page_Pagebuilderfrontpage_DynamicBlocks_FeaturedItems {
+  heading
+  description
+  featuredItemCard {
+    heading
+    description
+    image {
+      sizes
+      altText
+      sourceUrl
+    }
+  }
+}

@@ -1,0 +1,17 @@
+fragment WhyChooseUsFragment on Page_Pagebuilderfrontpage_DynamicBlocks_WhyChooseUs {
+  heading
+  description
+  background {
+    altText
+    sourceUrl
+  }
+  card {
+    heading
+    description
+    icon {
+      altText
+      sourceUrl
+    }
+    url
+  }
+}

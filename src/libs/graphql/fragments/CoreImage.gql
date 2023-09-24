@@ -1,0 +1,9 @@
+fragment CoreImageFragment on CoreImage {
+  attributes {
+    href
+    className
+    src
+    url
+    alt
+  }
+}

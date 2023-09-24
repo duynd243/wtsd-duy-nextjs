@@ -1,0 +1,15 @@
+fragment TestimonialFragment on Page_Pagebuilderfrontpage_DynamicBlocks_Testimonial {
+  sectionTitle
+  heading
+  description
+  card {
+    avatar {
+      altText
+      sourceUrl
+    }
+    reviewer
+    reviewerTitle
+    ratingScore
+    comment
+  }
+}

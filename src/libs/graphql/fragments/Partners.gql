@@ -1,0 +1,10 @@
+fragment PartnersFragment on Page_Pagebuilderfrontpage_DynamicBlocks_Partners {
+  heading
+  description
+  branchLogos {
+    logo {
+      altText
+      sourceUrl
+    }
+  }
+}

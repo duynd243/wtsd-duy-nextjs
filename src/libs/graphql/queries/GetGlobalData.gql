@@ -1,0 +1,86 @@
+fragment HeaderLinkFragment on AcfOptionsHeader_Headermenuitems_Menu_SingleLink {
+  singleLink {
+    target
+    title
+    url
+  }
+}
+
+fragment HeaderLinkGroupFragment on AcfOptionsHeader_Headermenuitems_Menu_LinkGroup {
+  groupName
+  links {
+    link {
+      target
+      title
+      url
+    }
+  }
+}
+
+query GetGlobalData {
+  acfOptionsHeader {
+    headerMenuItems {
+      menu {
+        __typename
+        ...HeaderLinkFragment
+        ...HeaderLinkGroupFragment
+      }
+    }
+  }
+  siteSettings {
+    siteInformation {
+      siteName
+      siteLogo {
+        altText
+        sourceUrl
+      }
+      siteDescription
+      copyrightText
+    }
+    contactInformation {
+      contactInformationHeading
+      contactItems {
+        icon {
+          altText
+          sourceUrl
+        }
+        text
+        url
+      }
+    }
+    subscribeNewsLetter {
+      heading
+      description
+      background {
+        altText
+        sizes
+        sourceUrl
+      }
+    }
+  }
+  acfOptionsFooter {
+    quickLinks {
+      quickLinksHeading
+      links {
+        link {
+          title
+          url
+          target
+        }
+      }
+    }
+    socialLinks {
+      socialLinks {
+        icon {
+          altText
+          sourceUrl
+        }
+        link {
+          target
+          title
+          url
+        }
+      }
+    }
+  }
+}
