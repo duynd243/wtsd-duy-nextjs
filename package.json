@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "yarn generate && concurrently \"faust dev\" \"yarn watch-codegen\"",
-    "build": "faust build",
+    "build": "yarn generate && yarn codegen && faust build",
     "generate": "faust generatePossibleTypes",
     "start": "faust start",
     "codegen": "graphql-codegen",
